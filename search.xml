@@ -13,18 +13,25 @@
 ]]></content>
   </entry>
   <entry>
-    <title>几个免费的代理软件和订阅</title>
-    <url>/2023/07/01/free-proxy-app/</url>
-    <content><![CDATA[<h1 id="软件"><a href="#软件" class="headerlink" title="软件"></a>软件</h1><ol>
-<li>Cloudflare WARP<br>由Cloudflare推出的一款VPN，官网为<a href="https://1.1.1.1/">1.1.1.1</a></li>
-</ol>
-<h1 id="订阅"><a href="#订阅" class="headerlink" title="订阅"></a>订阅</h1><p>暂无</p>
+    <title>ChatGPT已被DNS污染</title>
+    <url>/2023/03/05/chatgpt-dns/</url>
+    <content><![CDATA[<p>这几天，ChatGPT在中国大陆被大规模DNS污染，目前，大陆的大部分地区已无法正常访问ChatGPT官网。  </p>
+<p><img src="https://fastly.jsdelivr.net/gh/TheQHS/blog-img/ChatGPT_Ping.png" alt="Ping检测图"></p>
 ]]></content>
   </entry>
   <entry>
     <title>删除Windows上保留的存储</title>
     <url>/2022/11/17/delete-windows-reserved-storage/</url>
     <content><![CDATA[<h1 id="删除Windows上保留的存储"><a href="#删除Windows上保留的存储" class="headerlink" title="删除Windows上保留的存储"></a>删除Windows上保留的存储</h1><p>较新版本的Windows 10（大概在v1903以后）和Windows 11上有占用极大的“保留的存储”，可以用Dism来管理<br>打开CMD或PowerShell<br>输入“DISM.exe &#x2F;Online &#x2F;Get-ReservedStorageState”查询是否已启用<br>输入“DISM.exe &#x2F;Online &#x2F;Set-ReservedStorageState &#x2F;State:Disabled”禁用<br>输入“DISM.exe &#x2F;Online &#x2F;Set-ReservedStorageState &#x2F;State:Enabled”启用</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>几个免费的代理软件和订阅</title>
+    <url>/2023/07/01/free-proxy-app/</url>
+    <content><![CDATA[<h1 id="软件"><a href="#软件" class="headerlink" title="软件"></a>软件</h1><ol>
+<li>Cloudflare WARP<br>由Cloudflare推出的一款VPN，官网为<a href="https://1.1.1.1/">1.1.1.1</a></li>
+</ol>
+<h1 id="订阅"><a href="#订阅" class="headerlink" title="订阅"></a>订阅</h1><p>暂无</p>
 ]]></content>
   </entry>
   <entry>
@@ -55,10 +62,16 @@ git config --global https.proxy IP:PORT
 ]]></content>
   </entry>
   <entry>
-    <title>ChatGPT已被DNS污染</title>
-    <url>/2023/03/05/chatgpt-dns/</url>
-    <content><![CDATA[<p>这几天，ChatGPT在中国大陆被大规模DNS污染，目前，大陆的大部分地区已无法正常访问ChatGPT官网。  </p>
-<p><img src="https://fastly.jsdelivr.net/gh/TheQHS/blog-img/ChatGPT_Ping.png" alt="Ping检测图"></p>
+    <title>我的动态博客</title>
+    <url>/2023/01/14/my-dynamic-blog/</url>
+    <content><![CDATA[<p><del>我的动态博客在<a href="https://theqhs.tk/">theqhs.tk</a>,欢迎访问。</del>这个域名现已成为本站的备用域名。</p>
+<p>我的动态博客网址为：<a href="https://azure.theqhs.eu.org/">https://azure.theqhs.eu.org</a> ,网站搭建在 Azure 香港服务器上。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>注意：博客命名规则已修改</title>
+    <url>/2024/02/12/name-change/</url>
+    <content><![CDATA[<p>请注意，博客文章的链接已由中文改为英文，原分享链接均已失效。</p>
 ]]></content>
   </entry>
   <entry>
@@ -82,21 +95,8 @@ git config --global https.proxy IP:PORT
 </ul>
 <h1 id="绕过限制"><a href="#绕过限制" class="headerlink" title="绕过限制"></a>绕过限制</h1><ul>
 <li>如果你的设备硬件达不到要求，可以使用<a href="https://rufus.ie/">Rufus</a>制作可绕过限制的镜像</li>
-<li>如果你不想在22H2版本Windows 11的OOBE步骤时登录Microsoft 帐户，可以在帐户处输入“<a href="mailto:&#x31;&#x40;&#x31;&#x2e;&#x63;&#111;&#109;">&#x31;&#x40;&#x31;&#x2e;&#x63;&#111;&#109;</a>”，密码处随意输入，即可跳过。</li>
+<li>如果你不想在22H2版本Windows 11的OOBE步骤时登录Microsoft 帐户，可以在帐户处输入“<a href="mailto:&#49;&#64;&#49;&#46;&#99;&#111;&#x6d;">&#49;&#64;&#49;&#46;&#99;&#111;&#x6d;</a>”，密码处随意输入，即可跳过。</li>
 </ul>
-]]></content>
-  </entry>
-  <entry>
-    <title>我的动态博客</title>
-    <url>/2023/01/14/my-dynamic-blog/</url>
-    <content><![CDATA[<p><del>我的动态博客在<a href="https://theqhs.tk/">theqhs.tk</a>,欢迎访问。</del>这个域名现已成为本站的备用域名。</p>
-<p>我的动态博客网址为：<a href="https://azure.theqhs.eu.org/">https://azure.theqhs.eu.org</a> ,网站搭建在 Azure 香港服务器上。</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>注意：博客命名规则已修改</title>
-    <url>/2024/02/12/name-change/</url>
-    <content><![CDATA[<p>请注意，博客文章的链接已由中文改为英文，原分享链接均已失效。</p>
 ]]></content>
   </entry>
   <entry>
@@ -125,19 +125,12 @@ git config --global https.proxy IP:PORT
 ]]></content>
   </entry>
   <entry>
-    <title>翻墙入门（安卓）</title>
-    <url>/2023/04/15/proxy-android/</url>
-    <content><![CDATA[<p>安卓上可用的软件很多，而且大多都是开源免费的，比如Clash for Android，v2rayNG，NekoBox for Android等，我最常用的是Clash for Android,下面以Clash for Android来举例：  </p>
-<h1 id="1-下载软件"><a href="#1-下载软件" class="headerlink" title="1. 下载软件"></a>1. 下载软件</h1><p>在Google Play 商店和GitHub等平台都提供有安装包，Google Play商店会自动选择合适的架构然后下载安装，在GitHub上下载，建议选择arm64-v8a版本，然后手动安装。  </p>
-<h1 id="2-购买代理服务"><a href="#2-购买代理服务" class="headerlink" title="2. 购买代理服务"></a>2. 购买代理服务</h1><p>进入代理服务提供商（以下简称“机场”）的官方网站，通过邮箱进行注册，一般不建议使用国内的QQ、163、126等邮箱，推荐Gmail，Outlook等海外邮箱。  </p>
-<p>注册后，输入邮箱和密码登录，在侧边栏中找到“购买订阅”，点击进入，选择合适的套餐，一般有按月、季、年为单位的限期套餐和长期有效的套餐，点进合适套餐的购买页面，选择支付方式，即可跳转至第三方网站进行支付，支付后自动开通套餐，支付时一般有微信支付、支付宝、USDT等选择，可随意选择。  </p>
-<h1 id="3-导入机场订阅"><a href="#3-导入机场订阅" class="headerlink" title="3. 导入机场订阅"></a>3. 导入机场订阅</h1><p>返回网站主页，找到“一键导入”，选择“Clash for Android”，提示请求打开“Clash for Android”,点击”打开“，即跳转至Clash for Android,此时点击右上角的保存按钮，即成功导入订阅。  </p>
-<h1 id="4-连接代理"><a href="#4-连接代理" class="headerlink" title="4. 连接代理"></a>4. 连接代理</h1><p>点击Clash for Android首页的开启按钮，即可打开代理，一般会自动选择延迟最低的节点，也可手动选择其他节点。  </p>
-<h1 id="5-测试"><a href="#5-测试" class="headerlink" title="5. 测试"></a>5. 测试</h1><p>你可以打开以下知名网站来测试代理：</p>
-<p>Google <a href="https://www.google.com/">https://www.google.com</a></p>
-<p>Twitter <a href="https://twitter.com/">https://twitter.com</a></p>
-<p>Facebook <a href="https://www.facebook.com/">https://www.facebook.com/</a></p>
-<h1 id="6-结语"><a href="#6-结语" class="headerlink" title="6. 结语"></a>6. 结语</h1><p>教程到这里就结束了，过程很简单，几分钟就可以完成，祝你翻墙愉快！</p>
+    <title>新代理工具：Hiddify Next</title>
+    <url>/2024/02/05/new-proxy-tool-hiddify-next/</url>
+    <content><![CDATA[<p>最近一个新的代理工具，叫做 Hiddify Next，是伊朗人开发的，界面简洁，操作简单。</p>
+<h2 id="1-下载"><a href="#1-下载" class="headerlink" title="1. 下载"></a>1. 下载</h2><p>软件支持 Windows、macOS、Android、Linux 平台，官网为 <a href="https://hiddify.com/">https://hiddify.com/</a> ，GitHub 仓库地址为 <a href="https://github.com/hiddify/hiddify-next">https://github.com/hiddify/hiddify-next</a> ，自行下载即可，Android 端也可以在 Google Play 商店下载。</p>
+<h2 id="2-使用"><a href="#2-使用" class="headerlink" title="2. 使用"></a>2. 使用</h2><p>不用说也能明白，进入软件后，地区选中国，可以关闭分析，之后就是按照页面添加订阅配置文件，测速，选节点并连接。</p>
+<h2 id="3-结语"><a href="#3-结语" class="headerlink" title="3. 结语"></a>3. 结语</h2><p>与 NekoRay 相比，好像操作简单了不少，挺不错的。</p>
 ]]></content>
   </entry>
   <entry>
@@ -155,7 +148,7 @@ git config --global https.proxy IP:PORT
     <title>theqhs.top 域名已过期</title>
     <url>/2023/10/15/theqhs-top/</url>
     <content><![CDATA[<p>theqhs.top 域名已过期，请迁移到以下站点：</p>
-<p>主要域名：<a href="https://theqhs.eu.org(访问这个域名如果“显示连接已重置”请多刷新几次)/">https://theqhs.eu.org（访问这个域名如果“显示连接已重置”请多刷新几次）</a></p>
+<p>主要域名：<a href="https://theqhs.eu.org/">https://theqhs.eu.org</a> （访问这个域名如果显示“连接已重置”请多刷新几次）</p>
 <p>备用域名：</p>
 <ol>
 <li><p><a href="https://theqhs.link/">https://theqhs.link</a></p>
@@ -168,20 +161,27 @@ git config --global https.proxy IP:PORT
 ]]></content>
   </entry>
   <entry>
-    <title>新代理工具：Hiddify Next</title>
-    <url>/2024/02/05/new-proxy-tool-hiddify-next/</url>
-    <content><![CDATA[<p>最近一个新的代理工具，叫做 Hiddify Next，是伊朗人开发的，界面简洁，操作简单。</p>
-<h2 id="1-下载"><a href="#1-下载" class="headerlink" title="1. 下载"></a>1. 下载</h2><p>软件支持 Windows、macOS、Android、Linux 平台，官网为 <a href="https://hiddify.com/">https://hiddify.com/</a> ，GitHub 仓库地址为 <a href="https://github.com/hiddify/hiddify-next">https://github.com/hiddify/hiddify-next</a> ，自行下载即可，Android 端也可以在 Google Play 商店下载。</p>
-<h2 id="2-使用"><a href="#2-使用" class="headerlink" title="2. 使用"></a>2. 使用</h2><p>不用说也能明白，进入软件后，地区选中国，可以关闭分析，之后就是按照页面添加订阅配置文件，测速，选节点并连接。</p>
-<h2 id="3-结语"><a href="#3-结语" class="headerlink" title="3. 结语"></a>3. 结语</h2><p>与 NekoRay 相比，好像操作简单了不少，挺不错的。</p>
-]]></content>
-  </entry>
-  <entry>
     <title>Windows快速清理系统盘空间</title>
     <url>/2023/07/02/windows-clean/</url>
     <content><![CDATA[<h1 id="禁用休眠功能"><a href="#禁用休眠功能" class="headerlink" title="禁用休眠功能"></a>禁用休眠功能</h1><p>在以管理员身份运行的CMD中输入<code>powercfg -h off</code>即可</p>
 <h1 id="关闭保留的存储"><a href="#关闭保留的存储" class="headerlink" title="关闭保留的存储"></a>关闭保留的存储</h1><p>在以管理员身份运行的CMD中输入<code>DISM.exe /Online /Set-ReservedStorageState /State:Disabled</code>即可</p>
 <h1 id="移动虚拟内存文件"><a href="#移动虚拟内存文件" class="headerlink" title="移动虚拟内存文件"></a>移动虚拟内存文件</h1><p>打开设置，单击系统，单击系统信息，找到高级系统设置，单击性能设置，找到高级，虚拟内存，取消自动管理，并设置系统盘以外的磁盘为系统管理的大小，重启电脑，即可。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>翻墙入门（安卓）</title>
+    <url>/2023/04/15/proxy-android/</url>
+    <content><![CDATA[<p>安卓上可用的软件很多，而且大多都是开源免费的，比如Clash for Android，v2rayNG，NekoBox for Android等，我最常用的是Clash for Android,下面以Clash for Android来举例：  </p>
+<h1 id="1-下载软件"><a href="#1-下载软件" class="headerlink" title="1. 下载软件"></a>1. 下载软件</h1><p>在Google Play 商店和GitHub等平台都提供有安装包，Google Play商店会自动选择合适的架构然后下载安装，在GitHub上下载，建议选择arm64-v8a版本，然后手动安装。  </p>
+<h1 id="2-购买代理服务"><a href="#2-购买代理服务" class="headerlink" title="2. 购买代理服务"></a>2. 购买代理服务</h1><p>进入代理服务提供商（以下简称“机场”）的官方网站，通过邮箱进行注册，一般不建议使用国内的QQ、163、126等邮箱，推荐Gmail，Outlook等海外邮箱。  </p>
+<p>注册后，输入邮箱和密码登录，在侧边栏中找到“购买订阅”，点击进入，选择合适的套餐，一般有按月、季、年为单位的限期套餐和长期有效的套餐，点进合适套餐的购买页面，选择支付方式，即可跳转至第三方网站进行支付，支付后自动开通套餐，支付时一般有微信支付、支付宝、USDT等选择，可随意选择。  </p>
+<h1 id="3-导入机场订阅"><a href="#3-导入机场订阅" class="headerlink" title="3. 导入机场订阅"></a>3. 导入机场订阅</h1><p>返回网站主页，找到“一键导入”，选择“Clash for Android”，提示请求打开“Clash for Android”,点击”打开“，即跳转至Clash for Android,此时点击右上角的保存按钮，即成功导入订阅。  </p>
+<h1 id="4-连接代理"><a href="#4-连接代理" class="headerlink" title="4. 连接代理"></a>4. 连接代理</h1><p>点击Clash for Android首页的开启按钮，即可打开代理，一般会自动选择延迟最低的节点，也可手动选择其他节点。  </p>
+<h1 id="5-测试"><a href="#5-测试" class="headerlink" title="5. 测试"></a>5. 测试</h1><p>你可以打开以下知名网站来测试代理：</p>
+<p>Google <a href="https://www.google.com/">https://www.google.com</a></p>
+<p>Twitter <a href="https://twitter.com/">https://twitter.com</a></p>
+<p>Facebook <a href="https://www.facebook.com/">https://www.facebook.com/</a></p>
+<h1 id="6-结语"><a href="#6-结语" class="headerlink" title="6. 结语"></a>6. 结语</h1><p>教程到这里就结束了，过程很简单，几分钟就可以完成，祝你翻墙愉快！</p>
 ]]></content>
   </entry>
 </search>
