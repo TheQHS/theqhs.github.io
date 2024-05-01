@@ -26,21 +26,21 @@
 ]]></content>
   </entry>
   <entry>
-    <title>几个免费的代理软件和订阅</title>
-    <url>/2023/07/01/free-proxy-app/</url>
-    <content><![CDATA[<h1 id="软件"><a href="#软件" class="headerlink" title="软件"></a>软件</h1><ol>
-<li>Cloudflare WARP<br>由Cloudflare推出的一款VPN，官网为<a href="https://1.1.1.1/">1.1.1.1</a></li>
-</ol>
-<h1 id="订阅"><a href="#订阅" class="headerlink" title="订阅"></a>订阅</h1><p>暂无</p>
-]]></content>
-  </entry>
-  <entry>
     <title>Git配置代理</title>
     <url>/2023/07/02/git-proxy/</url>
     <content><![CDATA[<p>我们在使用Git上传文件到GitHub仓库时，经常会出现连接超时、连接已重置等错误，这种情况，我们可以通过设置代理来解决。</p>
 <pre><code>git config --global http.proxy IP:PORT
 git config --global https.proxy IP:PORT
 </code></pre>
+]]></content>
+  </entry>
+  <entry>
+    <title>几个免费的代理软件和订阅</title>
+    <url>/2023/07/01/free-proxy-app/</url>
+    <content><![CDATA[<h1 id="软件"><a href="#软件" class="headerlink" title="软件"></a>软件</h1><ol>
+<li>Cloudflare WARP<br>由Cloudflare推出的一款VPN，官网为<a href="https://1.1.1.1/">1.1.1.1</a></li>
+</ol>
+<h1 id="订阅"><a href="#订阅" class="headerlink" title="订阅"></a>订阅</h1><p>暂无</p>
 ]]></content>
   </entry>
   <entry>
@@ -62,16 +62,17 @@ git config --global https.proxy IP:PORT
 ]]></content>
   </entry>
   <entry>
-    <title>我的动态博客</title>
-    <url>/2023/01/14/my-dynamic-blog/</url>
-    <content><![CDATA[<p><del>我的动态博客在<a href="https://theqhs.tk/">theqhs.tk</a>,欢迎访问。</del>这个域名现已成为本站的备用域名。</p>
-<p>我的动态博客网址为：<a href="https://azure.theqhs.eu.org/">https://azure.theqhs.eu.org</a> ,网站搭建在 Azure 香港服务器上。</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>注意：博客命名规则已修改</title>
-    <url>/2024/02/12/name-change/</url>
-    <content><![CDATA[<p>请注意，博客文章的链接已由中文改为英文，原分享链接均已失效。</p>
+    <title>安装Windows 11需要注意什么？</title>
+    <url>/2022/11/18/install-windows-11/</url>
+    <content><![CDATA[<h1 id="硬件要求"><a href="#硬件要求" class="headerlink" title="硬件要求"></a>硬件要求</h1><ul>
+<li>确保设备有TPM 2.0模块</li>
+<li>CPU在支持列表内,详情见<a href="https://learn.microsoft.com/zh-cn/windows-hardware/design/minimum/windows-processor-requirements">Windows 处理器要求 | Microsoft Learn</a></li>
+<li>22H2版本Windows 11全新安装时必须连接网络</li>
+</ul>
+<h1 id="绕过限制"><a href="#绕过限制" class="headerlink" title="绕过限制"></a>绕过限制</h1><ul>
+<li>如果你的设备硬件达不到要求，可以使用<a href="https://rufus.ie/">Rufus</a>制作可绕过限制的镜像</li>
+<li>如果你不想在22H2版本Windows 11的OOBE步骤时登录Microsoft 帐户，可以在帐户处输入“<a href="mailto:&#49;&#x40;&#49;&#x2e;&#x63;&#111;&#109;">&#49;&#x40;&#49;&#x2e;&#x63;&#111;&#109;</a>”，密码处随意输入，即可跳过。</li>
+</ul>
 ]]></content>
   </entry>
   <entry>
@@ -86,31 +87,16 @@ git config --global https.proxy IP:PORT
 ]]></content>
   </entry>
   <entry>
-    <title>安装Windows 11需要注意什么？</title>
-    <url>/2022/11/18/install-windows-11/</url>
-    <content><![CDATA[<h1 id="硬件要求"><a href="#硬件要求" class="headerlink" title="硬件要求"></a>硬件要求</h1><ul>
-<li>确保设备有TPM 2.0模块</li>
-<li>CPU在支持列表内,详情见<a href="https://learn.microsoft.com/zh-cn/windows-hardware/design/minimum/windows-processor-requirements">Windows 处理器要求 | Microsoft Learn</a></li>
-<li>22H2版本Windows 11全新安装时必须连接网络</li>
-</ul>
-<h1 id="绕过限制"><a href="#绕过限制" class="headerlink" title="绕过限制"></a>绕过限制</h1><ul>
-<li>如果你的设备硬件达不到要求，可以使用<a href="https://rufus.ie/">Rufus</a>制作可绕过限制的镜像</li>
-<li>如果你不想在22H2版本Windows 11的OOBE步骤时登录Microsoft 帐户，可以在帐户处输入“<a href="mailto:&#49;&#64;&#49;&#46;&#99;&#111;&#x6d;">&#49;&#64;&#49;&#46;&#99;&#111;&#x6d;</a>”，密码处随意输入，即可跳过。</li>
-</ul>
+    <title>我的动态博客</title>
+    <url>/2023/01/14/my-dynamic-blog/</url>
+    <content><![CDATA[<p><del>我的动态博客在<a href="https://theqhs.tk/">theqhs.tk</a>,欢迎访问。</del>这个域名现已成为本站的备用域名。</p>
+<p>我的动态博客网址为：<a href="https://azure.theqhs.eu.org/">https://azure.theqhs.eu.org</a> ,网站搭建在 Azure 香港服务器上。</p>
 ]]></content>
   </entry>
   <entry>
-    <title>国庆GFW大封锁</title>
-    <url>/2023/10/03/national-day-gfw/</url>
-    <content><![CDATA[<p>更新：以下封锁均已解除。</p>
-<p>国庆期间，GFW封锁了大量网站，移动和联通网络用户受影响较大，下面列举被封锁的网站。</p>
-<ol>
-<li>Vercel官网及搭建在Vercel上的网站，如<a href="https://www.vercel.com/">https://www.vercel.com</a> ， <a href="https://www.sega.com/">https://www.sega.com</a></li>
-<li>微软部分服务，如<a href="https://www.xbox.com/">https://www.xbox.com</a> ， <a href="https://www.office.com/">https://www.office.com</a> ， <a href="https://visualstudio.com/">https://visualstudio.com/</a></li>
-<li>Minecraft和Mojang的网站，如<a href="https://www.minecraft.net/">https://www.minecraft.net</a> ， <a href="https://www.mojang.com/">https://www.mojang.com</a></li>
-<li>Cloudflare 1.1.1.1官网，<a href="http://1.1.1.1/">http://1.1.1.1</a> ，https访问正常。</li>
-</ol>
-<p>一些网站访问会显示连接已重置（ERR_CONNECTION_RESET），一些会跳转反诈，不知道过段时间会不会解封。</p>
+    <title>注意：博客命名规则已修改</title>
+    <url>/2024/02/12/name-change/</url>
+    <content><![CDATA[<p>请注意，博客文章的链接已由中文改为英文，原分享链接均已失效。</p>
 ]]></content>
   </entry>
   <entry>
@@ -125,23 +111,17 @@ git config --global https.proxy IP:PORT
 ]]></content>
   </entry>
   <entry>
-    <title>新代理工具：Hiddify Next</title>
-    <url>/2024/02/05/new-proxy-tool-hiddify-next/</url>
-    <content><![CDATA[<p>最近一个新的代理工具，叫做 Hiddify Next，是伊朗人开发的，界面简洁，操作简单。</p>
-<h2 id="1-下载"><a href="#1-下载" class="headerlink" title="1. 下载"></a>1. 下载</h2><p>软件支持 Windows、macOS、Android、Linux 平台，官网为 <a href="https://hiddify.com/">https://hiddify.com/</a> ，GitHub 仓库地址为 <a href="https://github.com/hiddify/hiddify-next">https://github.com/hiddify/hiddify-next</a> ，自行下载即可，Android 端也可以在 Google Play 商店下载。</p>
-<h2 id="2-使用"><a href="#2-使用" class="headerlink" title="2. 使用"></a>2. 使用</h2><p>不用说也能明白，进入软件后，地区选中国，可以关闭分析，之后就是按照页面添加订阅配置文件，测速，选节点并连接。</p>
-<h2 id="3-结语"><a href="#3-结语" class="headerlink" title="3. 结语"></a>3. 结语</h2><p>与 NekoRay 相比，好像操作简单了不少，挺不错的。</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>RackNerd的便宜VPS</title>
-    <url>/2023/01/15/racknerd-vps/</url>
-    <content><![CDATA[<h1 id="价格和配置"><a href="#价格和配置" class="headerlink" title="价格和配置"></a>价格和配置</h1><p>最近看到了一个非常便宜的VPS,年付仅 <strong>$12.98</strong>，配置上有1核的CPU，1GB内存，25GB硬盘，每月4TB的流量，详情见图<br><img src="https://cdn.jsdelivr.net/gh/TheQHS/blog-img/RackNerd_Price.png" alt="https://fastly.jsdelivr.net/gh/TheQHS/blog-img/RackNerd_Price.png"></p>
-<h1 id="VPS使用"><a href="#VPS使用" class="headerlink" title="VPS使用"></a>VPS使用</h1><h2 id="1-IP更换"><a href="#1-IP更换" class="headerlink" title="1. IP更换"></a>1. IP更换</h2><p>最开始分配给我的域名是被墙的，我发工单后，客服免费给我换了一个IP，说之后再换就是$3一个了，且用且珍惜吧！</p>
-<h2 id="2-搭建Typecho博客"><a href="#2-搭建Typecho博客" class="headerlink" title="2. 搭建Typecho博客"></a>2. 搭建Typecho博客</h2><p>更换IP后，我通过SSH连接到服务器，并安装了宝塔面板，然后用LNMP的方式快速搭建好了Typecho博客，以后博客内容的更新我会在两个站同时发的。</p>
-<h2 id="3-IP优选"><a href="#3-IP优选" class="headerlink" title="3. IP优选"></a>3. IP优选</h2><p>因为VPS在美国，所以延迟很高、加载很慢，于是我开始找方法，看到<a href="https://www.bilibili.com/read/cv16417085">这篇专栏</a>，感觉可行，就按照专栏所写一步步操作，只不过我的两个域名都托管在Cloudflare上，所以又参照了<a href="https://isedu.top/index.php/archives/53/">这篇文章</a>，最后把延迟控制在了45~60ms，非常不错！</p>
-<h2 id="4-搭建节点"><a href="#4-搭建节点" class="headerlink" title="4. 搭建节点"></a>4. 搭建节点</h2><p>我还参照<a href="https://www.youtube.com/watch?v=Mme5yaLQE7Y">这个视频</a>安装了x-ui，搭建vmess节点，并套上了GCore CDN，有一点要注意的是如果你之前安装了宝塔面板，需要先放行端口或关闭防火墙才能正常访问x-ui面板。</p>
-<h1 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h1><p>之后我会用这台服务器做更多有意思的事，敬请期待吧。</p>
+    <title>国庆GFW大封锁</title>
+    <url>/2023/10/03/national-day-gfw/</url>
+    <content><![CDATA[<p>更新：以下封锁均已解除。</p>
+<p>国庆期间，GFW封锁了大量网站，移动和联通网络用户受影响较大，下面列举被封锁的网站。</p>
+<ol>
+<li>Vercel官网及搭建在Vercel上的网站，如<a href="https://www.vercel.com/">https://www.vercel.com</a> ， <a href="https://www.sega.com/">https://www.sega.com</a></li>
+<li>微软部分服务，如<a href="https://www.xbox.com/">https://www.xbox.com</a> ， <a href="https://www.office.com/">https://www.office.com</a> ， <a href="https://visualstudio.com/">https://visualstudio.com/</a></li>
+<li>Minecraft和Mojang的网站，如<a href="https://www.minecraft.net/">https://www.minecraft.net</a> ， <a href="https://www.mojang.com/">https://www.mojang.com</a></li>
+<li>Cloudflare 1.1.1.1官网，<a href="http://1.1.1.1/">http://1.1.1.1</a> ，https访问正常。</li>
+</ol>
+<p>一些网站访问会显示连接已重置（ERR_CONNECTION_RESET），一些会跳转反诈，不知道过段时间会不会解封。</p>
 ]]></content>
   </entry>
   <entry>
@@ -161,11 +141,12 @@ git config --global https.proxy IP:PORT
 ]]></content>
   </entry>
   <entry>
-    <title>Windows快速清理系统盘空间</title>
-    <url>/2023/07/02/windows-clean/</url>
-    <content><![CDATA[<h1 id="禁用休眠功能"><a href="#禁用休眠功能" class="headerlink" title="禁用休眠功能"></a>禁用休眠功能</h1><p>在以管理员身份运行的CMD中输入<code>powercfg -h off</code>即可</p>
-<h1 id="关闭保留的存储"><a href="#关闭保留的存储" class="headerlink" title="关闭保留的存储"></a>关闭保留的存储</h1><p>在以管理员身份运行的CMD中输入<code>DISM.exe /Online /Set-ReservedStorageState /State:Disabled</code>即可</p>
-<h1 id="移动虚拟内存文件"><a href="#移动虚拟内存文件" class="headerlink" title="移动虚拟内存文件"></a>移动虚拟内存文件</h1><p>打开设置，单击系统，单击系统信息，找到高级系统设置，单击性能设置，找到高级，虚拟内存，取消自动管理，并设置系统盘以外的磁盘为系统管理的大小，重启电脑，即可。</p>
+    <title>新代理工具：Hiddify Next</title>
+    <url>/2024/02/05/new-proxy-tool-hiddify-next/</url>
+    <content><![CDATA[<p>最近一个新的代理工具，叫做 Hiddify Next，是伊朗人开发的，界面简洁，操作简单。</p>
+<h2 id="1-下载"><a href="#1-下载" class="headerlink" title="1. 下载"></a>1. 下载</h2><p>软件支持 Windows、macOS、Android、Linux 平台，官网为 <a href="https://hiddify.com/">https://hiddify.com/</a> ，GitHub 仓库地址为 <a href="https://github.com/hiddify/hiddify-next">https://github.com/hiddify/hiddify-next</a> ，自行下载即可，Android 端也可以在 Google Play 商店下载。</p>
+<h2 id="2-使用"><a href="#2-使用" class="headerlink" title="2. 使用"></a>2. 使用</h2><p>不用说也能明白，进入软件后，地区选中国，可以关闭分析，之后就是按照页面添加订阅配置文件，测速，选节点并连接。</p>
+<h2 id="3-结语"><a href="#3-结语" class="headerlink" title="3. 结语"></a>3. 结语</h2><p>与 NekoRay 相比，好像操作简单了不少，挺不错的。</p>
 ]]></content>
   </entry>
   <entry>
@@ -182,6 +163,25 @@ git config --global https.proxy IP:PORT
 <p>Twitter <a href="https://twitter.com/">https://twitter.com</a></p>
 <p>Facebook <a href="https://www.facebook.com/">https://www.facebook.com/</a></p>
 <h1 id="6-结语"><a href="#6-结语" class="headerlink" title="6. 结语"></a>6. 结语</h1><p>教程到这里就结束了，过程很简单，几分钟就可以完成，祝你翻墙愉快！</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>RackNerd的便宜VPS</title>
+    <url>/2023/01/15/racknerd-vps/</url>
+    <content><![CDATA[<h1 id="价格和配置"><a href="#价格和配置" class="headerlink" title="价格和配置"></a>价格和配置</h1><p>最近看到了一个非常便宜的VPS,年付仅 <strong>$12.98</strong>，配置上有1核的CPU，1GB内存，25GB硬盘，每月4TB的流量，详情见图<br><img src="https://cdn.jsdelivr.net/gh/TheQHS/blog-img/RackNerd_Price.png" alt="https://fastly.jsdelivr.net/gh/TheQHS/blog-img/RackNerd_Price.png"></p>
+<h1 id="VPS使用"><a href="#VPS使用" class="headerlink" title="VPS使用"></a>VPS使用</h1><h2 id="1-IP更换"><a href="#1-IP更换" class="headerlink" title="1. IP更换"></a>1. IP更换</h2><p>最开始分配给我的域名是被墙的，我发工单后，客服免费给我换了一个IP，说之后再换就是$3一个了，且用且珍惜吧！</p>
+<h2 id="2-搭建Typecho博客"><a href="#2-搭建Typecho博客" class="headerlink" title="2. 搭建Typecho博客"></a>2. 搭建Typecho博客</h2><p>更换IP后，我通过SSH连接到服务器，并安装了宝塔面板，然后用LNMP的方式快速搭建好了Typecho博客，以后博客内容的更新我会在两个站同时发的。</p>
+<h2 id="3-IP优选"><a href="#3-IP优选" class="headerlink" title="3. IP优选"></a>3. IP优选</h2><p>因为VPS在美国，所以延迟很高、加载很慢，于是我开始找方法，看到<a href="https://www.bilibili.com/read/cv16417085">这篇专栏</a>，感觉可行，就按照专栏所写一步步操作，只不过我的两个域名都托管在Cloudflare上，所以又参照了<a href="https://isedu.top/index.php/archives/53/">这篇文章</a>，最后把延迟控制在了45~60ms，非常不错！</p>
+<h2 id="4-搭建节点"><a href="#4-搭建节点" class="headerlink" title="4. 搭建节点"></a>4. 搭建节点</h2><p>我还参照<a href="https://www.youtube.com/watch?v=Mme5yaLQE7Y">这个视频</a>安装了x-ui，搭建vmess节点，并套上了GCore CDN，有一点要注意的是如果你之前安装了宝塔面板，需要先放行端口或关闭防火墙才能正常访问x-ui面板。</p>
+<h1 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h1><p>之后我会用这台服务器做更多有意思的事，敬请期待吧。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>Windows快速清理系统盘空间</title>
+    <url>/2023/07/02/windows-clean/</url>
+    <content><![CDATA[<h1 id="禁用休眠功能"><a href="#禁用休眠功能" class="headerlink" title="禁用休眠功能"></a>禁用休眠功能</h1><p>在以管理员身份运行的CMD中输入<code>powercfg -h off</code>即可</p>
+<h1 id="关闭保留的存储"><a href="#关闭保留的存储" class="headerlink" title="关闭保留的存储"></a>关闭保留的存储</h1><p>在以管理员身份运行的CMD中输入<code>DISM.exe /Online /Set-ReservedStorageState /State:Disabled</code>即可</p>
+<h1 id="移动虚拟内存文件"><a href="#移动虚拟内存文件" class="headerlink" title="移动虚拟内存文件"></a>移动虚拟内存文件</h1><p>打开设置，单击系统，单击系统信息，找到高级系统设置，单击性能设置，找到高级，虚拟内存，取消自动管理，并设置系统盘以外的磁盘为系统管理的大小，重启电脑，即可。</p>
 ]]></content>
   </entry>
 </search>
