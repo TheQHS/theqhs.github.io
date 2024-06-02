@@ -20,7 +20,7 @@
 ]]></content>
   </entry>
   <entry>
-    <title>删除 Windows上 保留的存储</title>
+    <title>删除 Windows 上保留的存储</title>
     <url>/2022/11/17/delete-windows-reserved-storage/</url>
     <content><![CDATA[<h1 id="删除Windows上保留的存储"><a href="#删除Windows上保留的存储" class="headerlink" title="删除Windows上保留的存储"></a>删除Windows上保留的存储</h1><p>较新版本的 Windows 10（大概在 v1903 以后）和 Windows 11 上有占用极大的「保留的存储」，可以用 Dism 来管理<br>打开 CMD 或 PowerShell<br>输入「DISM.exe &#x2F;Online &#x2F;Get-ReservedStorageState」查询是否已启用<br>输入「DISM.exe &#x2F;Online &#x2F;Set-ReservedStorageState &#x2F;State:Disabled」禁用<br>输入「DISM.exe &#x2F;Online &#x2F;Set-ReservedStorageState &#x2F;State:Enabled」启用</p>
 ]]></content>
@@ -53,6 +53,20 @@ git config --global https.proxy IP:PORT
 ]]></content>
   </entry>
   <entry>
+    <title>安装 Windows 11 需要注意什么？</title>
+    <url>/2022/11/18/install-windows-11/</url>
+    <content><![CDATA[<h1 id="硬件要求"><a href="#硬件要求" class="headerlink" title="硬件要求"></a>硬件要求</h1><ul>
+<li>确保设备有 TPM 2.0 模块</li>
+<li>CPU 在支持列表内,详情见<a href="https://learn.microsoft.com/zh-cn/windows-hardware/design/minimum/windows-processor-requirements">Windows 处理器要求 | Microsoft Learn</a></li>
+<li>22H2 版本 Windows 11 全新安装时必须连接网络</li>
+</ul>
+<h1 id="绕过限制"><a href="#绕过限制" class="headerlink" title="绕过限制"></a>绕过限制</h1><ul>
+<li>如果你的设备硬件达不到要求，可以使用 <a href="https://rufus.ie/">Rufus</a> 制作可绕过限制的镜像</li>
+<li>如果你不想在 22H2 版本 Windows 11 的 OOBE 步骤时登录 Microsoft 帐户，可以在帐户处输入「<a href="mailto:&#x31;&#64;&#x31;&#46;&#x63;&#x6f;&#x6d;">&#x31;&#64;&#x31;&#46;&#x63;&#x6f;&#x6d;</a>」，密码处随意输入，即可跳过。</li>
+</ul>
+]]></content>
+  </entry>
+  <entry>
     <title>我用的翻墙机场</title>
     <url>/2023/03/04/i-use-airport/</url>
     <content><![CDATA[<ol>
@@ -64,17 +78,9 @@ git config --global https.proxy IP:PORT
 ]]></content>
   </entry>
   <entry>
-    <title>安装 Windows 11 需要注意什么？</title>
-    <url>/2022/11/18/install-windows-11/</url>
-    <content><![CDATA[<h1 id="硬件要求"><a href="#硬件要求" class="headerlink" title="硬件要求"></a>硬件要求</h1><ul>
-<li>确保设备有 TPM 2.0 模块</li>
-<li>CPU 在支持列表内,详情见<a href="https://learn.microsoft.com/zh-cn/windows-hardware/design/minimum/windows-processor-requirements">Windows 处理器要求 | Microsoft Learn</a></li>
-<li>22H2 版本 Windows 11 全新安装时必须连接网络</li>
-</ul>
-<h1 id="绕过限制"><a href="#绕过限制" class="headerlink" title="绕过限制"></a>绕过限制</h1><ul>
-<li>如果你的设备硬件达不到要求，可以使用 <a href="https://rufus.ie/">Rufus</a> 制作可绕过限制的镜像</li>
-<li>如果你不想在 22H2 版本 Windows 11 的 OOBE 步骤时登录 Microsoft 帐户，可以在帐户处输入「<a href="mailto:&#x31;&#64;&#49;&#46;&#99;&#x6f;&#x6d;">&#x31;&#64;&#49;&#46;&#99;&#x6f;&#x6d;</a>」，密码处随意输入，即可跳过。</li>
-</ul>
+    <title>注意：博客命名规则已修改</title>
+    <url>/2024/02/12/name-change/</url>
+    <content><![CDATA[<p>请注意，博客文章的链接已由中文改为英文，原分享链接均已失效。</p>
 ]]></content>
   </entry>
   <entry>
@@ -85,9 +91,17 @@ git config --global https.proxy IP:PORT
 ]]></content>
   </entry>
   <entry>
-    <title>注意：博客命名规则已修改</title>
-    <url>/2024/02/12/name-change/</url>
-    <content><![CDATA[<p>请注意，博客文章的链接已由中文改为英文，原分享链接均已失效。</p>
+    <title>国庆 GFW 大封锁</title>
+    <url>/2023/10/03/national-day-gfw/</url>
+    <content><![CDATA[<p>更新：以下封锁均已解除。</p>
+<p>国庆期间，GFW 封锁了大量网站，移动和联通网络用户受影响较大，下面列举被封锁的网站。</p>
+<ol>
+<li>Vercel 官网及搭建在 Vercel 上的网站，如<a href="https://www.vercel.com/">https://www.vercel.com</a> ， <a href="https://www.sega.com/">https://www.sega.com</a></li>
+<li>微软部分服务，如<a href="https://www.xbox.com/">https://www.xbox.com</a> ， <a href="https://www.office.com/">https://www.office.com</a> ， <a href="https://visualstudio.com/">https://visualstudio.com/</a></li>
+<li>Minecraft 和 Mojang 的网站，如<a href="https://www.minecraft.net/">https://www.minecraft.net</a> ， <a href="https://www.mojang.com/">https://www.mojang.com</a></li>
+<li>Cloudflare 1.1.1.1官网，<a href="http://1.1.1.1/">http://1.1.1.1</a> ，https 访问正常。</li>
+</ol>
+<p>一些网站访问会显示连接已重置（ERR_CONNECTION_RESET），一些会跳转反诈，不知道过段时间会不会解封。</p>
 ]]></content>
   </entry>
   <entry>
@@ -111,31 +125,6 @@ git config --global https.proxy IP:PORT
 ]]></content>
   </entry>
   <entry>
-    <title>国庆 GFW 大封锁</title>
-    <url>/2023/10/03/national-day-gfw/</url>
-    <content><![CDATA[<p>更新：以下封锁均已解除。</p>
-<p>国庆期间，GFW 封锁了大量网站，移动和联通网络用户受影响较大，下面列举被封锁的网站。</p>
-<ol>
-<li>Vercel 官网及搭建在 Vercel 上的网站，如<a href="https://www.vercel.com/">https://www.vercel.com</a> ， <a href="https://www.sega.com/">https://www.sega.com</a></li>
-<li>微软部分服务，如<a href="https://www.xbox.com/">https://www.xbox.com</a> ， <a href="https://www.office.com/">https://www.office.com</a> ， <a href="https://visualstudio.com/">https://visualstudio.com/</a></li>
-<li>Minecraft 和 Mojang 的网站，如<a href="https://www.minecraft.net/">https://www.minecraft.net</a> ， <a href="https://www.mojang.com/">https://www.mojang.com</a></li>
-<li>Cloudflare 1.1.1.1官网，<a href="http://1.1.1.1/">http://1.1.1.1</a> ，https 访问正常。</li>
-</ol>
-<p>一些网站访问会显示连接已重置（ERR_CONNECTION_RESET），一些会跳转反诈，不知道过段时间会不会解封。</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>RackNerd的便宜VPS</title>
-    <url>/2023/01/15/racknerd-vps/</url>
-    <content><![CDATA[<h1 id="价格和配置"><a href="#价格和配置" class="headerlink" title="价格和配置"></a>价格和配置</h1><p>最近看到了一个非常便宜的 VPS,年付仅 <strong>$12.98</strong>，配置上有 1 核的 CPU，1GB内存，25GB 硬盘，每月 4TB 的流量，详情见图<br><img src="https://cdn.jsdmirror.com/gh/TheQHS/blog-img/RackNerd_Price.png" alt="https://cdn.jsdmirror.com/gh/TheQHS/blog-img/RackNerd_Price.png"></p>
-<h1 id="VPS使用"><a href="#VPS使用" class="headerlink" title="VPS使用"></a>VPS使用</h1><h2 id="1-IP-更换"><a href="#1-IP-更换" class="headerlink" title="1. IP 更换"></a>1. IP 更换</h2><p>最开始分配给我的域名是被墙的，我发工单后，客服免费给我换了一个IP，说之后再换就是$3一个了，且用且珍惜吧！</p>
-<h2 id="2-搭建-Typecho-博客"><a href="#2-搭建-Typecho-博客" class="headerlink" title="2. 搭建 Typecho 博客"></a>2. 搭建 Typecho 博客</h2><p>更换 IP 后，我通过 SSH 连接到服务器，并安装了宝塔面板，然后用 LNMP 的方式快速搭建好了 Typecho 博客，以后博客内容的更新我会在两个站同时发的。</p>
-<h2 id="3-IP-优选"><a href="#3-IP-优选" class="headerlink" title="3. IP 优选"></a>3. IP 优选</h2><p>因为 VPS 在美国，所以延迟很高、加载很慢，于是我开始找方法，看到<a href="https://www.bilibili.com/read/cv16417085">这篇专栏</a>，感觉可行，就按照专栏所写一步步操作，只不过我的两个域名都托管在 Cloudflare 上，所以又参照了<a href="https://isedu.top/index.php/archives/53/">这篇文章</a>，最后把延迟控制在了 45~60 ms，非常不错！</p>
-<h2 id="4-搭建节点"><a href="#4-搭建节点" class="headerlink" title="4. 搭建节点"></a>4. 搭建节点</h2><p>我还参照<a href="https://www.youtube.com/watch?v=Mme5yaLQE7Y">这个视频</a>安装了 x-ui，搭建 vmess节点，并套上了 GCore CDN，有一点要注意的是如果你之前安装了宝塔面板，需要先放行端口或关闭防火墙才能正常访问x-ui面板。</p>
-<h1 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h1><p>之后我会用这台服务器做更多有意思的事，敬请期待吧。</p>
-]]></content>
-  </entry>
-  <entry>
     <title>翻墙入门（安卓）</title>
     <url>/2023/04/15/proxy-android/</url>
     <content><![CDATA[<p>安卓上可用的软件很多，而且大多都是开源免费的，比如 Clash for Android，v2rayNG，NekoBox for Android等，我最常用的是 Clash for Android,下面以 Clash for Android 来举例：  </p>
@@ -149,6 +138,17 @@ git config --global https.proxy IP:PORT
 <p>Twitter <a href="https://twitter.com/">https://twitter.com</a></p>
 <p>Facebook <a href="https://www.facebook.com/">https://www.facebook.com/</a></p>
 <h1 id="6-结语"><a href="#6-结语" class="headerlink" title="6. 结语"></a>6. 结语</h1><p>教程到这里就结束了，过程很简单，几分钟就可以完成，祝你翻墙愉快！</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>RackNerd的便宜VPS</title>
+    <url>/2023/01/15/racknerd-vps/</url>
+    <content><![CDATA[<h1 id="价格和配置"><a href="#价格和配置" class="headerlink" title="价格和配置"></a>价格和配置</h1><p>最近看到了一个非常便宜的 VPS,年付仅 <strong>$12.98</strong>，配置上有 1 核的 CPU，1GB内存，25GB 硬盘，每月 4TB 的流量，详情见图<br><img src="https://cdn.jsdmirror.com/gh/TheQHS/blog-img/RackNerd_Price.png" alt="https://cdn.jsdmirror.com/gh/TheQHS/blog-img/RackNerd_Price.png"></p>
+<h1 id="VPS使用"><a href="#VPS使用" class="headerlink" title="VPS使用"></a>VPS使用</h1><h2 id="1-IP-更换"><a href="#1-IP-更换" class="headerlink" title="1. IP 更换"></a>1. IP 更换</h2><p>最开始分配给我的域名是被墙的，我发工单后，客服免费给我换了一个IP，说之后再换就是$3一个了，且用且珍惜吧！</p>
+<h2 id="2-搭建-Typecho-博客"><a href="#2-搭建-Typecho-博客" class="headerlink" title="2. 搭建 Typecho 博客"></a>2. 搭建 Typecho 博客</h2><p>更换 IP 后，我通过 SSH 连接到服务器，并安装了宝塔面板，然后用 LNMP 的方式快速搭建好了 Typecho 博客，以后博客内容的更新我会在两个站同时发的。</p>
+<h2 id="3-IP-优选"><a href="#3-IP-优选" class="headerlink" title="3. IP 优选"></a>3. IP 优选</h2><p>因为 VPS 在美国，所以延迟很高、加载很慢，于是我开始找方法，看到<a href="https://www.bilibili.com/read/cv16417085">这篇专栏</a>，感觉可行，就按照专栏所写一步步操作，只不过我的两个域名都托管在 Cloudflare 上，所以又参照了<a href="https://isedu.top/index.php/archives/53/">这篇文章</a>，最后把延迟控制在了 45~60 ms，非常不错！</p>
+<h2 id="4-搭建节点"><a href="#4-搭建节点" class="headerlink" title="4. 搭建节点"></a>4. 搭建节点</h2><p>我还参照<a href="https://www.youtube.com/watch?v=Mme5yaLQE7Y">这个视频</a>安装了 x-ui，搭建 vmess节点，并套上了 GCore CDN，有一点要注意的是如果你之前安装了宝塔面板，需要先放行端口或关闭防火墙才能正常访问x-ui面板。</p>
+<h1 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h1><p>之后我会用这台服务器做更多有意思的事，敬请期待吧。</p>
 ]]></content>
   </entry>
   <entry>
