@@ -26,6 +26,17 @@
 ]]></content>
   </entry>
   <entry>
+    <title>我用的翻墙机场</title>
+    <url>/2023/03/04/i-use-airport/</url>
+    <content><![CDATA[<ol>
+<li>性价比机场 <a href="https://性价比机场.com/">性价比机场.com</a> 1年10块钱 </li>
+<li>魔戒.net <a href="https://mojie.buzz/">https://mojie.buzz/</a> 按量计费的机场 </li>
+<li>Helium Network <a href="https://console.henet.uk/">https://console.henet.uk/</a> 这家有公益套餐</li>
+<li>FlyingBird <a href="https://flyingbird.pro/">https://flyingbird.pro/</a> 专线机场，速度很快，延迟很低</li>
+</ol>
+]]></content>
+  </entry>
+  <entry>
     <title>Git 配置代理</title>
     <url>/2023/07/02/git-proxy/</url>
     <content><![CDATA[<p>我们在使用 Git 上传文件到 GitHub 仓库时，经常会出现连接超时、连接已重置等错误，这种情况，我们可以通过设置代理来解决。</p>
@@ -62,25 +73,8 @@ git config --global https.proxy IP:PORT
 </ul>
 <h1 id="绕过限制"><a href="#绕过限制" class="headerlink" title="绕过限制"></a>绕过限制</h1><ul>
 <li>如果你的设备硬件达不到要求，可以使用 <a href="https://rufus.ie/">Rufus</a> 制作可绕过限制的镜像</li>
-<li>如果你不想在 22H2 版本 Windows 11 的 OOBE 步骤时登录 Microsoft 帐户，可以在帐户处输入「<a href="mailto:&#x31;&#64;&#x31;&#46;&#x63;&#x6f;&#x6d;">&#x31;&#64;&#x31;&#46;&#x63;&#x6f;&#x6d;</a>」，密码处随意输入，即可跳过。</li>
+<li>如果你不想在 22H2 版本 Windows 11 的 OOBE 步骤时登录 Microsoft 帐户，可以在帐户处输入「<a href="mailto:&#49;&#64;&#x31;&#46;&#99;&#x6f;&#x6d;">&#49;&#64;&#x31;&#46;&#99;&#x6f;&#x6d;</a>」，密码处随意输入，即可跳过。</li>
 </ul>
-]]></content>
-  </entry>
-  <entry>
-    <title>我用的翻墙机场</title>
-    <url>/2023/03/04/i-use-airport/</url>
-    <content><![CDATA[<ol>
-<li>性价比机场 <a href="https://性价比机场.com/">性价比机场.com</a> 1年10块钱 </li>
-<li>魔戒.net <a href="https://mojie.buzz/">https://mojie.buzz/</a> 按量计费的机场 </li>
-<li>Helium Network <a href="https://console.henet.uk/">https://console.henet.uk/</a> 这家有公益套餐</li>
-<li>FlyingBird <a href="https://flyingbird.pro/">https://flyingbird.pro/</a> 专线机场，速度很快，延迟很低</li>
-</ol>
-]]></content>
-  </entry>
-  <entry>
-    <title>注意：博客命名规则已修改</title>
-    <url>/2024/02/12/name-change/</url>
-    <content><![CDATA[<p>请注意，博客文章的链接已由中文改为英文，原分享链接均已失效。</p>
 ]]></content>
   </entry>
   <entry>
@@ -105,6 +99,28 @@ git config --global https.proxy IP:PORT
 ]]></content>
   </entry>
   <entry>
+    <title>注意：博客命名规则已修改</title>
+    <url>/2024/02/12/name-change/</url>
+    <content><![CDATA[<p>请注意，博客文章的链接已由中文改为英文，原分享链接均已失效。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>翻墙入门（安卓）</title>
+    <url>/2023/04/15/proxy-android/</url>
+    <content><![CDATA[<p>安卓上可用的软件很多，而且大多都是开源免费的，比如 Clash for Android，v2rayNG，NekoBox for Android等，我最常用的是 Clash for Android,下面以 Clash for Android 来举例：  </p>
+<h1 id="1-下载软件"><a href="#1-下载软件" class="headerlink" title="1. 下载软件"></a>1. 下载软件</h1><p>在 Google Play 商店和GitHub等平台都提供有安装包，Google Play商店会自动选择合适的架构然后下载安装，在 GitHub 上下载，建议选择 arm64-v8a 版本，然后手动安装。  </p>
+<h1 id="2-购买代理服务"><a href="#2-购买代理服务" class="headerlink" title="2. 购买代理服务"></a>2. 购买代理服务</h1><p>进入代理服务提供商（以下简称「机场」）的官方网站，通过邮箱进行注册，一般不建议使用国内的 QQ、163、126等邮箱，推荐 Gmail，Outlook 等海外邮箱。  </p>
+<p>注册后，输入邮箱和密码登录，在侧边栏中找到「购买订阅」，点击进入，选择合适的套餐，一般有按月、季、年为单位的限期套餐和长期有效的套餐，点进合适套餐的购买页面，选择支付方式，即可跳转至第三方网站进行支付，支付后自动开通套餐，支付时一般有微信支付、支付宝、USDT等选择，可随意选择。  </p>
+<h1 id="3-导入机场订阅"><a href="#3-导入机场订阅" class="headerlink" title="3. 导入机场订阅"></a>3. 导入机场订阅</h1><p>返回网站主页，找到「一键导入」，选择「Clash for Android」，提示请求打开「Clash for Android」，点击「打开」，即跳转至Clash for Android,此时点击右上角的保存按钮，即成功导入订阅。  </p>
+<h1 id="4-连接代理"><a href="#4-连接代理" class="headerlink" title="4. 连接代理"></a>4. 连接代理</h1><p>点击 Clash for Android 首页的开启按钮，即可打开代理，一般会自动选择延迟最低的节点，也可手动选择其他节点。  </p>
+<h1 id="5-测试"><a href="#5-测试" class="headerlink" title="5. 测试"></a>5. 测试</h1><p>你可以打开以下知名网站来测试代理：</p>
+<p>Google <a href="https://www.google.com/">https://www.google.com</a></p>
+<p>Twitter <a href="https://twitter.com/">https://twitter.com</a></p>
+<p>Facebook <a href="https://www.facebook.com/">https://www.facebook.com/</a></p>
+<h1 id="6-结语"><a href="#6-结语" class="headerlink" title="6. 结语"></a>6. 结语</h1><p>教程到这里就结束了，过程很简单，几分钟就可以完成，祝你翻墙愉快！</p>
+]]></content>
+  </entry>
+  <entry>
     <title>NekoBox for Android 入门</title>
     <url>/2024/02/05/neko-box-for-android/</url>
     <content><![CDATA[<p>Clash 删库也有好长一段时间了，我这段时间一直用的是 Clash Verge Rev 和 NekoBox 这两个工具，Clash Verge Rev 是电脑端的，操作与 Clash for Windows 基本一致，而 NekoBox 与 Clash for Android 的操作有很大不同，下面就来讲讲 NekoBox 的使用。</p>
@@ -125,22 +141,6 @@ git config --global https.proxy IP:PORT
 ]]></content>
   </entry>
   <entry>
-    <title>翻墙入门（安卓）</title>
-    <url>/2023/04/15/proxy-android/</url>
-    <content><![CDATA[<p>安卓上可用的软件很多，而且大多都是开源免费的，比如 Clash for Android，v2rayNG，NekoBox for Android等，我最常用的是 Clash for Android,下面以 Clash for Android 来举例：  </p>
-<h1 id="1-下载软件"><a href="#1-下载软件" class="headerlink" title="1. 下载软件"></a>1. 下载软件</h1><p>在 Google Play 商店和GitHub等平台都提供有安装包，Google Play商店会自动选择合适的架构然后下载安装，在 GitHub 上下载，建议选择 arm64-v8a 版本，然后手动安装。  </p>
-<h1 id="2-购买代理服务"><a href="#2-购买代理服务" class="headerlink" title="2. 购买代理服务"></a>2. 购买代理服务</h1><p>进入代理服务提供商（以下简称「机场」）的官方网站，通过邮箱进行注册，一般不建议使用国内的 QQ、163、126等邮箱，推荐 Gmail，Outlook 等海外邮箱。  </p>
-<p>注册后，输入邮箱和密码登录，在侧边栏中找到「购买订阅」，点击进入，选择合适的套餐，一般有按月、季、年为单位的限期套餐和长期有效的套餐，点进合适套餐的购买页面，选择支付方式，即可跳转至第三方网站进行支付，支付后自动开通套餐，支付时一般有微信支付、支付宝、USDT等选择，可随意选择。  </p>
-<h1 id="3-导入机场订阅"><a href="#3-导入机场订阅" class="headerlink" title="3. 导入机场订阅"></a>3. 导入机场订阅</h1><p>返回网站主页，找到「一键导入」，选择「Clash for Android」，提示请求打开「Clash for Android」，点击「打开」，即跳转至Clash for Android,此时点击右上角的保存按钮，即成功导入订阅。  </p>
-<h1 id="4-连接代理"><a href="#4-连接代理" class="headerlink" title="4. 连接代理"></a>4. 连接代理</h1><p>点击 Clash for Android 首页的开启按钮，即可打开代理，一般会自动选择延迟最低的节点，也可手动选择其他节点。  </p>
-<h1 id="5-测试"><a href="#5-测试" class="headerlink" title="5. 测试"></a>5. 测试</h1><p>你可以打开以下知名网站来测试代理：</p>
-<p>Google <a href="https://www.google.com/">https://www.google.com</a></p>
-<p>Twitter <a href="https://twitter.com/">https://twitter.com</a></p>
-<p>Facebook <a href="https://www.facebook.com/">https://www.facebook.com/</a></p>
-<h1 id="6-结语"><a href="#6-结语" class="headerlink" title="6. 结语"></a>6. 结语</h1><p>教程到这里就结束了，过程很简单，几分钟就可以完成，祝你翻墙愉快！</p>
-]]></content>
-  </entry>
-  <entry>
     <title>RackNerd的便宜VPS</title>
     <url>/2023/01/15/racknerd-vps/</url>
     <content><![CDATA[<h1 id="价格和配置"><a href="#价格和配置" class="headerlink" title="价格和配置"></a>价格和配置</h1><p>最近看到了一个非常便宜的 VPS,年付仅 <strong>$12.98</strong>，配置上有 1 核的 CPU，1GB内存，25GB 硬盘，每月 4TB 的流量，详情见图<br><img src="https://cdn.jsdmirror.com/gh/TheQHS/blog-img/RackNerd_Price.png" alt="https://cdn.jsdmirror.com/gh/TheQHS/blog-img/RackNerd_Price.png"></p>
@@ -158,13 +158,16 @@ git config --global https.proxy IP:PORT
 <p>主要域名：<a href="https://theqhs.eu.org/">https://theqhs.eu.org</a> （访问这个域名如果显示「连接已重置」请多刷新几次）</p>
 <p>备用域名：</p>
 <ol>
-<li><p><a href="https://theqhs.link/">https://theqhs.link</a></p>
-</li>
-<li><p><a href="https://theqhs.tk/">https://theqhs.tk</a></p>
-</li>
-<li><p><a href="https://theqhs.cloudns.biz/">https://theqhs.cloudns.biz</a></p>
-</li>
+<li><a href="https://theqhs.link/">https://theqhs.link</a> 即将过期</li>
+<li><a href="https://theqhs.tk/">https://theqhs.tk</a></li>
+<li><a href="https://theqhs.cloudns.biz/">https://theqhs.cloudns.biz</a></li>
 </ol>
+]]></content>
+  </entry>
+  <entry>
+    <title>theqhs.link 域名即将过期</title>
+    <url>/2024/06/18/theqhs-link/</url>
+    <content><![CDATA[<p><a href="theqhs.ink">theqhs.link</a> 域名即将过期，请转到 theqhs.eu.org 继续访问。</p>
 ]]></content>
   </entry>
   <entry>
