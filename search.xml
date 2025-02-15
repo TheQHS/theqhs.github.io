@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>ChatGPT 已被 DNS 污染</title>
+    <url>/2023/03/05/chatgpt-dns/</url>
+    <content><![CDATA[<p>这几天，ChatGPT 在中国大陆被大规模 DNS 污染，目前，大陆的大部分地区已无法正常访问 ChatGPT 官网。  </p>
+<p><img src="https://cdn.jsdmirror.com/gh/TheQHS/blog-img/ChatGPT_Ping.png" alt="Ping检测图"></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>修改 Butterfly 主题中 jsDelivr 的网址</title>
+    <url>/2024/02/03/butterfly-jsdelivr/</url>
+    <content><![CDATA[<p>近期访问博客，发现极其缓慢，在开发人员工具中的网络选项卡里一看，原来是 jsDelivr 无法访问导致到，于是在网络上查找，最终找到了解决方法。</p>
+<h2 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h2><p>打开<code>博客文件夹/themes/butterfly/scripts/events</code>中的<code>cdn.js</code>，找到这一行：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">jsdelivr: `https://cdn.jsdelivr.net/npm/$&#123;name&#125;$&#123;verType&#125;/$&#123;min_file&#125;`,</span><br></pre></td></tr></table></figure>
+
+<p>将 cdn.jsdelivr.net 改为镜像站。</p>
+<p>这样访问速度就正常了。</p>
+<p>注：网站访客数、总访问量，文章阅读量无法查看、一直转圈有概率是广告拦截插件的问题（至少我这边是），将插件关闭或自定义白名单即可解决。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>删除 Windows 上保留的存储</title>
+    <url>/2022/11/17/delete-windows-reserved-storage/</url>
+    <content><![CDATA[<h1 id="删除Windows上保留的存储"><a href="#删除Windows上保留的存储" class="headerlink" title="删除Windows上保留的存储"></a>删除Windows上保留的存储</h1><p>较新版本的 Windows 10（大概在 v1903 以后）和 Windows 11 上有占用极大的「保留的存储」，可以用 Dism 来管理<br>打开 CMD 或 PowerShell<br>输入「DISM.exe &#x2F;Online &#x2F;Get-ReservedStorageState」查询是否已启用<br>输入「DISM.exe &#x2F;Online &#x2F;Set-ReservedStorageState &#x2F;State:Disabled」禁用<br>输入「DISM.exe &#x2F;Online &#x2F;Set-ReservedStorageState &#x2F;State:Enabled」启用</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>Git 配置代理</title>
+    <url>/2023/07/02/git-proxy/</url>
+    <content><![CDATA[<p>我们在使用 Git 上传文件到 GitHub 仓库时，经常会出现连接超时、连接已重置等错误，这种情况，我们可以通过设置代理来解决。</p>
+<pre><code>git config --global http.proxy IP:PORT
+git config --global https.proxy IP:PORT
+</code></pre>
+]]></content>
+  </entry>
+  <entry>
+    <title>移动 H62G 光猫破解</title>
+    <url>/2024/01/29/h62g-crack/</url>
+    <content><![CDATA[<p>最近通过浏览各大论坛和博客的文章，终于成功破解了我的移动H62G光猫，现在总结一下方法。</p>
+<p>在开始前，请保存好 LOID 等重要信息。</p>
+<h2 id="1-工厂级恢复出厂设置"><a href="#1-工厂级恢复出厂设置" class="headerlink" title="1. 工厂级恢复出厂设置"></a>1. 工厂级恢复出厂设置</h2><p>我们在点击进光猫的管理，设备管理，恢复配置页面后，会发现有一个「本地恢复默认配置」，这个并不是恢复出厂设置，移动把真正的恢复出厂设置隐藏起来了，我们需要用浏览器的「检查」功能让其重新出现。</p>
+<p>右键「本地恢复默认配置」，选择「检查」，你会发现往下几行有一个「display:none」，展开的话里面有「本地恢复出厂配置」，就是这个了，把「none」字样删除，按下 Enter 键，这时网页上就会出现「本地恢复出厂配置」按钮，点击并确认，等待片刻，在此期间拔掉光纤。</p>
+<h2 id="2-开启-Telnet"><a href="#2-开启-Telnet" class="headerlink" title="2. 开启 Telnet"></a>2. 开启 Telnet</h2><p>用网线连接到光猫，跳过注册，账户名用 CMCCAdmin，密码用 aDm8H%MdA ，之后在安全，Telnet配置中开启 Telnet，记录用户名和密码。</p>
+<h2 id="3-注册"><a href="#3-注册" class="headerlink" title="3. 注册"></a>3. 注册</h2><p>退出登录，点设备注册，输入 LOID ，等待下发数据。</p>
+<h2 id="4-修改超级管理员账号名和密码"><a href="#4-修改超级管理员账号名和密码" class="headerlink" title="4. 修改超级管理员账号名和密码"></a>4. 修改超级管理员账号名和密码</h2><p>用 Telnet 连接到光猫，工具随意，我用的是 Xshell 7 。</p>
+<p>输入以下命令，将超级管理员账户名修改为 CMCCAdmin</p>
+<p><code>sidbg 1 DB set DevAuthInfo 0 User CMCCAdmin</code></p>
+<p>输入以下命令，将超级管理员密码改为 aDm8H%MdA</p>
+<p> <code>sidbg 1 DB set DevAuthInfo 0 Pass aDm8H%MdA </code></p>
+<h2 id="5-删除-TR069"><a href="#5-删除-TR069" class="headerlink" title="5. 删除 TR069"></a>5. 删除 TR069</h2><p>进入网络，宽带设置，Internet连接，在连接名称中找到 TR069 ，选中，并在页面最下方点「删除」。</p>
+<p>这样就全部结束了，之后桥接、开 UPnP 、关 IPv6 防火墙就随心所欲了。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>我用的翻墙机场</title>
+    <url>/2023/03/04/i-use-airport/</url>
+    <content><![CDATA[<ol>
+<li>性价比机场 <a href="https://性价比机场.com/">性价比机场.com</a> 1年10块钱 </li>
+<li>魔戒.net <a href="https://mojie.buzz/">https://mojie.buzz/</a> 按量计费的机场 </li>
+<li>Helium Network <a href="https://console.henet.uk/">https://console.henet.uk/</a> 这家有公益套餐</li>
+<li>FlyingBird <a href="https://flyingbird.pro/">https://flyingbird.pro/</a> 专线机场，速度很快，延迟很低</li>
+</ol>
+]]></content>
+  </entry>
+  <entry>
+    <title>安装 Windows 11 需要注意什么？</title>
+    <url>/2022/11/18/install-windows-11/</url>
+    <content><![CDATA[<h1 id="硬件要求"><a href="#硬件要求" class="headerlink" title="硬件要求"></a>硬件要求</h1><ul>
+<li>确保设备有 TPM 2.0 模块</li>
+<li>CPU 在支持列表内,详情见<a href="https://learn.microsoft.com/zh-cn/windows-hardware/design/minimum/windows-processor-requirements">Windows 处理器要求 | Microsoft Learn</a></li>
+<li>22H2 版本 Windows 11 全新安装时必须连接网络</li>
+</ul>
+<h1 id="绕过限制"><a href="#绕过限制" class="headerlink" title="绕过限制"></a>绕过限制</h1><ul>
+<li>如果你的设备硬件达不到要求，可以使用 <a href="https://rufus.ie/">Rufus</a> 制作可绕过限制的镜像</li>
+<li>如果你不想在 22H2 版本 Windows 11 的 OOBE 步骤时登录 Microsoft 帐户，可以在帐户处输入「<a href="mailto:&#49;&#x40;&#49;&#46;&#x63;&#x6f;&#109;">&#49;&#x40;&#49;&#46;&#x63;&#x6f;&#109;</a>」，密码处随意输入，即可跳过。</li>
+</ul>
+]]></content>
+  </entry>
+  <entry>
+    <title>我的动态博客</title>
+    <url>/2023/01/14/my-dynamic-blog/</url>
+    <content><![CDATA[<p><del>我的动态博客在 <a href="https://theqhs.tk/">theqhs.tk</a>,欢迎访问。</del>这个域名现已成为本站的备用域名。</p>
+<p><del>我的动态博客网址为：<a href="https://azure.theqhs.eu.org/">https://azure.theqhs.eu.org</a> ,网站搭建在 Azure 香港服务器上。</del></p>
+<p>我的动态博客网址为：<a href="https://serv00.theqhs.eu.org/">https://serv00.theqhs.eu.org</a> ,网站搭建在 Serv00 免费虚拟主机上。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>注意：博客命名规则已修改</title>
+    <url>/2024/02/12/name-change/</url>
+    <content><![CDATA[<p>请注意，博客文章的链接已由中文改为英文，原分享链接均已失效。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>国庆 GFW 大封锁</title>
+    <url>/2023/10/03/national-day-gfw/</url>
+    <content><![CDATA[<p>更新：以下封锁均已解除。</p>
+<p>国庆期间，GFW 封锁了大量网站，移动和联通网络用户受影响较大，下面列举被封锁的网站。</p>
+<ol>
+<li>Vercel 官网及搭建在 Vercel 上的网站，如<a href="https://www.vercel.com/">https://www.vercel.com</a> ， <a href="https://www.sega.com/">https://www.sega.com</a></li>
+<li>微软部分服务，如<a href="https://www.xbox.com/">https://www.xbox.com</a> ， <a href="https://www.office.com/">https://www.office.com</a> ， <a href="https://visualstudio.com/">https://visualstudio.com/</a></li>
+<li>Minecraft 和 Mojang 的网站，如<a href="https://www.minecraft.net/">https://www.minecraft.net</a> ， <a href="https://www.mojang.com/">https://www.mojang.com</a></li>
+<li>Cloudflare 1.1.1.1官网，<a href="http://1.1.1.1/">http://1.1.1.1</a> ，https 访问正常。</li>
+</ol>
+<p>一些网站访问会显示连接已重置（ERR_CONNECTION_RESET），一些会跳转反诈，不知道过段时间会不会解封。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>NekoBox for Android 入门</title>
+    <url>/2024/02/05/neko-box-for-android/</url>
+    <content><![CDATA[<p>Clash 删库也有好长一段时间了，我这段时间一直用的是 Clash Verge Rev 和 NekoBox 这两个工具，Clash Verge Rev 是电脑端的，操作与 Clash for Windows 基本一致，而 NekoBox 与 Clash for Android 的操作有很大不同，下面就来讲讲 NekoBox 的使用。</p>
+<h2 id="1-下载"><a href="#1-下载" class="headerlink" title="1. 下载"></a>1. 下载</h2><p>在 GitHub 仓库下载即可，网址为：<a href="https://github.com/MatsuriDayo/NekoBoxForAndroid/releases">https://github.com/MatsuriDayo/NekoBoxForAndroid/releases</a> 一般选用 arm64-v8a，老旧的手机用 armeabi-v7a ，应该很少有用 x86 安卓的吧。</p>
+<h2 id="2-导入订阅"><a href="#2-导入订阅" class="headerlink" title="2. 导入订阅"></a>2. 导入订阅</h2><p>点击左上角三条杠，分组选项卡，右上角加号，进入分组设置。<br>分组名随便，分组类型选订阅，在下方填入订阅链接，点击右上角即成功。<br>有时候一些机场的「导入到 Clash For Android」选项也能正常唤起 NekoBox for Android 这时候就能一键导入了。</p>
+<h2 id="3-设置路由（设置分流、规则模式、绕过大陆）"><a href="#3-设置路由（设置分流、规则模式、绕过大陆）" class="headerlink" title="3. 设置路由（设置分流、规则模式、绕过大陆）"></a>3. 设置路由（设置分流、规则模式、绕过大陆）</h2><p>默认情况下 NekoBox for Android 是全局模式，需要设置路由。<br>在路由选项卡，将「中国 域名规则」和「中国 IP 规则」启用，即成功设置绕过大陆。</p>
+<h2 id="4-连接"><a href="#4-连接" class="headerlink" title="4. 连接"></a>4. 连接</h2><p>在配置选项卡中，找到新创建的分组，点击右上角三个点，连接测试，URL Test 进行测速，选择合适的节点，同意 VPN 请求，即可连接。</p>
+<h2 id="5-结语"><a href="#5-结语" class="headerlink" title="5. 结语"></a>5. 结语</h2><p>这就是全部的内容了，这样 NekoBox 就能正常使用了。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>新代理工具：Hiddify Next</title>
+    <url>/2024/02/05/new-proxy-tool-hiddify-next/</url>
+    <content><![CDATA[<p>最近一个新的代理工具，叫做 Hiddify Next，是伊朗人开发的，界面简洁，操作简单。</p>
+<h2 id="1-下载"><a href="#1-下载" class="headerlink" title="1. 下载"></a>1. 下载</h2><p>软件支持 Windows、macOS、Android、Linux 平台，官网为 <a href="https://hiddify.com/">https://hiddify.com/</a> ，GitHub 仓库地址为 <a href="https://github.com/hiddify/hiddify-next">https://github.com/hiddify/hiddify-next</a> ，自行下载即可，Android 端也可以在 Google Play 商店下载。</p>
+<h2 id="2-使用"><a href="#2-使用" class="headerlink" title="2. 使用"></a>2. 使用</h2><p>不用说也能明白，进入软件后，地区选中国，可以关闭分析，之后就是按照页面添加订阅配置文件，测速，选节点并连接。</p>
+<h2 id="3-结语"><a href="#3-结语" class="headerlink" title="3. 结语"></a>3. 结语</h2><p>与 NekoRay 相比，好像操作简单了不少，挺不错的。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>theqhs.top 域名已过期</title>
+    <url>/2023/10/15/theqhs-top/</url>
+    <content><![CDATA[<p>theqhs.top 域名已过期，请迁移到以下站点：</p>
+<p>主要域名：<a href="https://theqhs.eu.org/">https://theqhs.eu.org</a> （访问这个域名如果显示「连接已重置」请多刷新几次）</p>
+<p>备用域名：</p>
+<ol>
+<li><a href="https://theqhs.link/">https://theqhs.link</a> 即将过期</li>
+<li><a href="https://theqhs.tk/">https://theqhs.tk</a></li>
+<li><a href="https://theqhs.cloudns.biz/">https://theqhs.cloudns.biz</a></li>
+</ol>
+]]></content>
+  </entry>
+  <entry>
+    <title>翻墙入门（安卓）</title>
+    <url>/2023/04/15/proxy-android/</url>
+    <content><![CDATA[<p>安卓上可用的软件很多，而且大多都是开源免费的，比如 Clash for Android，v2rayNG，NekoBox for Android等，我最常用的是 Clash for Android,下面以 Clash for Android 来举例：  </p>
+<h1 id="1-下载软件"><a href="#1-下载软件" class="headerlink" title="1. 下载软件"></a>1. 下载软件</h1><p>在 Google Play 商店和GitHub等平台都提供有安装包，Google Play商店会自动选择合适的架构然后下载安装，在 GitHub 上下载，建议选择 arm64-v8a 版本，然后手动安装。  </p>
+<h1 id="2-购买代理服务"><a href="#2-购买代理服务" class="headerlink" title="2. 购买代理服务"></a>2. 购买代理服务</h1><p>进入代理服务提供商（以下简称「机场」）的官方网站，通过邮箱进行注册，一般不建议使用国内的 QQ、163、126等邮箱，推荐 Gmail，Outlook 等海外邮箱。  </p>
+<p>注册后，输入邮箱和密码登录，在侧边栏中找到「购买订阅」，点击进入，选择合适的套餐，一般有按月、季、年为单位的限期套餐和长期有效的套餐，点进合适套餐的购买页面，选择支付方式，即可跳转至第三方网站进行支付，支付后自动开通套餐，支付时一般有微信支付、支付宝、USDT等选择，可随意选择。  </p>
+<h1 id="3-导入机场订阅"><a href="#3-导入机场订阅" class="headerlink" title="3. 导入机场订阅"></a>3. 导入机场订阅</h1><p>返回网站主页，找到「一键导入」，选择「Clash for Android」，提示请求打开「Clash for Android」，点击「打开」，即跳转至Clash for Android,此时点击右上角的保存按钮，即成功导入订阅。  </p>
+<h1 id="4-连接代理"><a href="#4-连接代理" class="headerlink" title="4. 连接代理"></a>4. 连接代理</h1><p>点击 Clash for Android 首页的开启按钮，即可打开代理，一般会自动选择延迟最低的节点，也可手动选择其他节点。  </p>
+<h1 id="5-测试"><a href="#5-测试" class="headerlink" title="5. 测试"></a>5. 测试</h1><p>你可以打开以下知名网站来测试代理：</p>
+<p>Google <a href="https://www.google.com/">https://www.google.com</a></p>
+<p>Twitter <a href="https://twitter.com/">https://twitter.com</a></p>
+<p>Facebook <a href="https://www.facebook.com/">https://www.facebook.com/</a></p>
+<h1 id="6-结语"><a href="#6-结语" class="headerlink" title="6. 结语"></a>6. 结语</h1><p>教程到这里就结束了，过程很简单，几分钟就可以完成，祝你翻墙愉快！</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>Windows 快速清理系统盘空间</title>
+    <url>/2023/07/02/windows-clean/</url>
+    <content><![CDATA[<h1 id="禁用休眠功能"><a href="#禁用休眠功能" class="headerlink" title="禁用休眠功能"></a>禁用休眠功能</h1><p>在以管理员身份运行的 CMD 中输入<code>powercfg -h off</code>即可</p>
+<h1 id="关闭保留的存储"><a href="#关闭保留的存储" class="headerlink" title="关闭保留的存储"></a>关闭保留的存储</h1><p>在以管理员身份运行的 CMD 中输入<code>DISM.exe /Online /Set-ReservedStorageState /State:Disabled</code>即可</p>
+<h1 id="移动虚拟内存文件"><a href="#移动虚拟内存文件" class="headerlink" title="移动虚拟内存文件"></a>移动虚拟内存文件</h1><p>打开设置，单击系统，单击系统信息，找到高级系统设置，单击性能设置，找到高级，虚拟内存，取消自动管理，并设置系统盘以外的磁盘为系统管理的大小，重启电脑，即可。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>RackNerd的便宜VPS</title>
+    <url>/2023/01/15/racknerd-vps/</url>
+    <content><![CDATA[<h1 id="价格和配置"><a href="#价格和配置" class="headerlink" title="价格和配置"></a>价格和配置</h1><p>最近看到了一个非常便宜的 VPS,年付仅 <strong>$12.98</strong>，配置上有 1 核的 CPU，1GB内存，25GB 硬盘，每月 4TB 的流量，详情见图<br><img src="https://cdn.jsdmirror.com/gh/TheQHS/blog-img/RackNerd_Price.png" alt="https://cdn.jsdmirror.com/gh/TheQHS/blog-img/RackNerd_Price.png"></p>
+<h1 id="VPS使用"><a href="#VPS使用" class="headerlink" title="VPS使用"></a>VPS使用</h1><h2 id="1-IP-更换"><a href="#1-IP-更换" class="headerlink" title="1. IP 更换"></a>1. IP 更换</h2><p>最开始分配给我的域名是被墙的，我发工单后，客服免费给我换了一个IP，说之后再换就是$3一个了，且用且珍惜吧！</p>
+<h2 id="2-搭建-Typecho-博客"><a href="#2-搭建-Typecho-博客" class="headerlink" title="2. 搭建 Typecho 博客"></a>2. 搭建 Typecho 博客</h2><p>更换 IP 后，我通过 SSH 连接到服务器，并安装了宝塔面板，然后用 LNMP 的方式快速搭建好了 Typecho 博客，以后博客内容的更新我会在两个站同时发的。</p>
+<h2 id="3-IP-优选"><a href="#3-IP-优选" class="headerlink" title="3. IP 优选"></a>3. IP 优选</h2><p>因为 VPS 在美国，所以延迟很高、加载很慢，于是我开始找方法，看到<a href="https://www.bilibili.com/read/cv16417085">这篇专栏</a>，感觉可行，就按照专栏所写一步步操作，只不过我的两个域名都托管在 Cloudflare 上，所以又参照了<a href="https://isedu.top/index.php/archives/53/">这篇文章</a>，最后把延迟控制在了 45~60 ms，非常不错！</p>
+<h2 id="4-搭建节点"><a href="#4-搭建节点" class="headerlink" title="4. 搭建节点"></a>4. 搭建节点</h2><p>我还参照<a href="https://www.youtube.com/watch?v=Mme5yaLQE7Y">这个视频</a>安装了 x-ui，搭建 vmess节点，并套上了 GCore CDN，有一点要注意的是如果你之前安装了宝塔面板，需要先放行端口或关闭防火墙才能正常访问x-ui面板。</p>
+<h1 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h1><p>之后我会用这台服务器做更多有意思的事，敬请期待吧。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>theqhs.link 域名即将过期</title>
+    <url>/2024/06/18/theqhs-link/</url>
+    <content><![CDATA[<p><a href="theqhs.ink">theqhs.link</a> 域名即将过期，请转到 theqhs.eu.org 继续访问。</p>
+]]></content>
+  </entry>
+</search>
