@@ -179,4 +179,32 @@ git config --global https.proxy IP:PORT
 <h1 id="移动虚拟内存文件"><a href="#移动虚拟内存文件" class="headerlink" title="移动虚拟内存文件"></a>移动虚拟内存文件</h1><p>打开设置，单击系统，单击系统信息，找到高级系统设置，单击性能设置，找到高级，虚拟内存，取消自动管理，并设置系统盘以外的磁盘为系统管理的大小，重启电脑，即可。</p>
 ]]></content>
   </entry>
+  <entry>
+    <title>MIUI 14 最大程度保证 FCM 推送（需要 Root 权限）</title>
+    <url>/2025/02/16/miui-fcm-fix/</url>
+    <content><![CDATA[<h3 id="推荐"><a href="#推荐" class="headerlink" title="推荐"></a>推荐</h3><ol>
+<li><p>将 Google Play 商店的省电策略设置为「无限制」。</p>
+</li>
+<li><p>将需要推送的应用的自启动权限开启，省电策略设置为「智能限制」。</p>
+</li>
+<li><p>下载 <a href="https://github.com/kooritea/fcmfix">fcm-fix</a> 这个 LSPosed 模块，启用并额外勾选「Google Play 服务」作用域，重启手机。</p>
+</li>
+<li><p>修改 &#x2F;根目录&#x2F;etc 下的 hosts 文件，添加 <a href="https://github.com/F122Y/fcm-hosts">fcm-hosts</a> 项目中的条目，将每条 IP 与 域名之间的空格减为 1 个，重启手机。</p>
+<p>注：不正确修改会导致 Via、Chrome 等浏览器无法使用。</p>
+</li>
+<li><p>如果使用 NoActive 等第三方墓碑软件，请在相应 app 中将要推送的应用设置白名单。</p>
+</li>
+</ol>
+<h3 id="可选"><a href="#可选" class="headerlink" title="可选"></a>可选</h3><ol>
+<li>在 <a href="https://github.com/ReChronoRain/HyperCeiler">HyperCeiler</a> 中将「允许 Google Play 服务在任何时候联网」开启。</li>
+<li>在设置中将通知样式改为「原生样式」，方便打开通知。</li>
+</ol>
+<h3 id="提示"><a href="#提示" class="headerlink" title="提示"></a>提示</h3><ol>
+<li>自启动可在设置中的应用管理快速调整。</li>
+<li>文件管理器推荐使用 MT 管理器。</li>
+<li>LSPosed 可以使用 <a href="https://github.com/xteamlyer/LSPosed-JingMatrix">JingMatrix 的版本</a>。</li>
+<li>Telegram 可将后台常驻和重复通知开启。</li>
+</ol>
+]]></content>
+  </entry>
 </search>
