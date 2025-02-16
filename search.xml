@@ -1,13 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>ChatGPT 已被 DNS 污染</title>
-    <url>/2023/03/05/chatgpt-dns/</url>
-    <content><![CDATA[<p>这几天，ChatGPT 在中国大陆被大规模 DNS 污染，目前，大陆的大部分地区已无法正常访问 ChatGPT 官网。  </p>
-<p><img src="https://cdn.jsdmirror.com/gh/TheQHS/blog-img/ChatGPT_Ping.png" alt="Ping检测图"></p>
-]]></content>
-  </entry>
-  <entry>
     <title>修改 Butterfly 主题中 jsDelivr 的网址</title>
     <url>/2024/02/03/butterfly-jsdelivr/</url>
     <content><![CDATA[<p>近期访问博客，发现极其缓慢，在开发人员工具中的网络选项卡里一看，原来是 jsDelivr 无法访问导致到，于是在网络上查找，最终找到了解决方法。</p>
@@ -20,9 +13,10 @@
 ]]></content>
   </entry>
   <entry>
-    <title>删除 Windows 上保留的存储</title>
-    <url>/2022/11/17/delete-windows-reserved-storage/</url>
-    <content><![CDATA[<h1 id="删除Windows上保留的存储"><a href="#删除Windows上保留的存储" class="headerlink" title="删除Windows上保留的存储"></a>删除Windows上保留的存储</h1><p>较新版本的 Windows 10（大概在 v1903 以后）和 Windows 11 上有占用极大的「保留的存储」，可以用 Dism 来管理<br>打开 CMD 或 PowerShell<br>输入「DISM.exe &#x2F;Online &#x2F;Get-ReservedStorageState」查询是否已启用<br>输入「DISM.exe &#x2F;Online &#x2F;Set-ReservedStorageState &#x2F;State:Disabled」禁用<br>输入「DISM.exe &#x2F;Online &#x2F;Set-ReservedStorageState &#x2F;State:Enabled」启用</p>
+    <title>ChatGPT 已被 DNS 污染</title>
+    <url>/2023/03/05/chatgpt-dns/</url>
+    <content><![CDATA[<p>这几天，ChatGPT 在中国大陆被大规模 DNS 污染，目前，大陆的大部分地区已无法正常访问 ChatGPT 官网。  </p>
+<p><img src="https://cdn.jsdmirror.com/gh/TheQHS/blog-img/ChatGPT_Ping.png" alt="Ping检测图"></p>
 ]]></content>
   </entry>
   <entry>
@@ -32,6 +26,12 @@
 <pre><code>git config --global http.proxy IP:PORT
 git config --global https.proxy IP:PORT
 </code></pre>
+]]></content>
+  </entry>
+  <entry>
+    <title>删除 Windows 上保留的存储</title>
+    <url>/2022/11/17/delete-windows-reserved-storage/</url>
+    <content><![CDATA[<h1 id="删除Windows上保留的存储"><a href="#删除Windows上保留的存储" class="headerlink" title="删除Windows上保留的存储"></a>删除Windows上保留的存储</h1><p>较新版本的 Windows 10（大概在 v1903 以后）和 Windows 11 上有占用极大的「保留的存储」，可以用 Dism 来管理<br>打开 CMD 或 PowerShell<br>输入「DISM.exe &#x2F;Online &#x2F;Get-ReservedStorageState」查询是否已启用<br>输入「DISM.exe &#x2F;Online &#x2F;Set-ReservedStorageState &#x2F;State:Disabled」禁用<br>输入「DISM.exe &#x2F;Online &#x2F;Set-ReservedStorageState &#x2F;State:Enabled」启用</p>
 ]]></content>
   </entry>
   <entry>
@@ -64,6 +64,14 @@ git config --global https.proxy IP:PORT
 ]]></content>
   </entry>
   <entry>
+    <title>我的动态博客</title>
+    <url>/2023/01/14/my-dynamic-blog/</url>
+    <content><![CDATA[<p><del>我的动态博客在 <a href="https://theqhs.tk/">theqhs.tk</a>,欢迎访问。</del>这个域名现已成为本站的备用域名。</p>
+<p><del>我的动态博客网址为：<a href="https://azure.theqhs.eu.org/">https://azure.theqhs.eu.org</a> ,网站搭建在 Azure 香港服务器上。</del></p>
+<p>我的动态博客网址为：<a href="https://serv00.theqhs.eu.org/">https://serv00.theqhs.eu.org</a> ,网站搭建在 Serv00 免费虚拟主机上。</p>
+]]></content>
+  </entry>
+  <entry>
     <title>安装 Windows 11 需要注意什么？</title>
     <url>/2022/11/18/install-windows-11/</url>
     <content><![CDATA[<h1 id="硬件要求"><a href="#硬件要求" class="headerlink" title="硬件要求"></a>硬件要求</h1><ul>
@@ -73,16 +81,8 @@ git config --global https.proxy IP:PORT
 </ul>
 <h1 id="绕过限制"><a href="#绕过限制" class="headerlink" title="绕过限制"></a>绕过限制</h1><ul>
 <li>如果你的设备硬件达不到要求，可以使用 <a href="https://rufus.ie/">Rufus</a> 制作可绕过限制的镜像</li>
-<li>如果你不想在 22H2 版本 Windows 11 的 OOBE 步骤时登录 Microsoft 帐户，可以在帐户处输入「<a href="mailto:&#49;&#x40;&#49;&#46;&#x63;&#x6f;&#109;">&#49;&#x40;&#49;&#46;&#x63;&#x6f;&#109;</a>」，密码处随意输入，即可跳过。</li>
+<li>如果你不想在 22H2 版本 Windows 11 的 OOBE 步骤时登录 Microsoft 帐户，可以在帐户处输入「<a href="mailto:&#49;&#64;&#x31;&#x2e;&#x63;&#111;&#x6d;">&#49;&#64;&#x31;&#x2e;&#x63;&#111;&#x6d;</a>」，密码处随意输入，即可跳过。</li>
 </ul>
-]]></content>
-  </entry>
-  <entry>
-    <title>我的动态博客</title>
-    <url>/2023/01/14/my-dynamic-blog/</url>
-    <content><![CDATA[<p><del>我的动态博客在 <a href="https://theqhs.tk/">theqhs.tk</a>,欢迎访问。</del>这个域名现已成为本站的备用域名。</p>
-<p><del>我的动态博客网址为：<a href="https://azure.theqhs.eu.org/">https://azure.theqhs.eu.org</a> ,网站搭建在 Azure 香港服务器上。</del></p>
-<p>我的动态博客网址为：<a href="https://serv00.theqhs.eu.org/">https://serv00.theqhs.eu.org</a> ,网站搭建在 Serv00 免费虚拟主机上。</p>
 ]]></content>
   </entry>
   <entry>
@@ -106,17 +106,6 @@ git config --global https.proxy IP:PORT
 ]]></content>
   </entry>
   <entry>
-    <title>NekoBox for Android 入门</title>
-    <url>/2024/02/05/neko-box-for-android/</url>
-    <content><![CDATA[<p>Clash 删库也有好长一段时间了，我这段时间一直用的是 Clash Verge Rev 和 NekoBox 这两个工具，Clash Verge Rev 是电脑端的，操作与 Clash for Windows 基本一致，而 NekoBox 与 Clash for Android 的操作有很大不同，下面就来讲讲 NekoBox 的使用。</p>
-<h2 id="1-下载"><a href="#1-下载" class="headerlink" title="1. 下载"></a>1. 下载</h2><p>在 GitHub 仓库下载即可，网址为：<a href="https://github.com/MatsuriDayo/NekoBoxForAndroid/releases">https://github.com/MatsuriDayo/NekoBoxForAndroid/releases</a> 一般选用 arm64-v8a，老旧的手机用 armeabi-v7a ，应该很少有用 x86 安卓的吧。</p>
-<h2 id="2-导入订阅"><a href="#2-导入订阅" class="headerlink" title="2. 导入订阅"></a>2. 导入订阅</h2><p>点击左上角三条杠，分组选项卡，右上角加号，进入分组设置。<br>分组名随便，分组类型选订阅，在下方填入订阅链接，点击右上角即成功。<br>有时候一些机场的「导入到 Clash For Android」选项也能正常唤起 NekoBox for Android 这时候就能一键导入了。</p>
-<h2 id="3-设置路由（设置分流、规则模式、绕过大陆）"><a href="#3-设置路由（设置分流、规则模式、绕过大陆）" class="headerlink" title="3. 设置路由（设置分流、规则模式、绕过大陆）"></a>3. 设置路由（设置分流、规则模式、绕过大陆）</h2><p>默认情况下 NekoBox for Android 是全局模式，需要设置路由。<br>在路由选项卡，将「中国 域名规则」和「中国 IP 规则」启用，即成功设置绕过大陆。</p>
-<h2 id="4-连接"><a href="#4-连接" class="headerlink" title="4. 连接"></a>4. 连接</h2><p>在配置选项卡中，找到新创建的分组，点击右上角三个点，连接测试，URL Test 进行测速，选择合适的节点，同意 VPN 请求，即可连接。</p>
-<h2 id="5-结语"><a href="#5-结语" class="headerlink" title="5. 结语"></a>5. 结语</h2><p>这就是全部的内容了，这样 NekoBox 就能正常使用了。</p>
-]]></content>
-  </entry>
-  <entry>
     <title>新代理工具：Hiddify Next</title>
     <url>/2024/02/05/new-proxy-tool-hiddify-next/</url>
     <content><![CDATA[<p>最近一个新的代理工具，叫做 Hiddify Next，是伊朗人开发的，界面简洁，操作简单。</p>
@@ -126,16 +115,14 @@ git config --global https.proxy IP:PORT
 ]]></content>
   </entry>
   <entry>
-    <title>theqhs.top 域名已过期</title>
-    <url>/2023/10/15/theqhs-top/</url>
-    <content><![CDATA[<p>theqhs.top 域名已过期，请迁移到以下站点：</p>
-<p>主要域名：<a href="https://theqhs.eu.org/">https://theqhs.eu.org</a> （访问这个域名如果显示「连接已重置」请多刷新几次）</p>
-<p>备用域名：</p>
-<ol>
-<li><a href="https://theqhs.link/">https://theqhs.link</a> 即将过期</li>
-<li><a href="https://theqhs.tk/">https://theqhs.tk</a></li>
-<li><a href="https://theqhs.cloudns.biz/">https://theqhs.cloudns.biz</a></li>
-</ol>
+    <title>NekoBox for Android 入门</title>
+    <url>/2024/02/05/neko-box-for-android/</url>
+    <content><![CDATA[<p>Clash 删库也有好长一段时间了，我这段时间一直用的是 Clash Verge Rev 和 NekoBox 这两个工具，Clash Verge Rev 是电脑端的，操作与 Clash for Windows 基本一致，而 NekoBox 与 Clash for Android 的操作有很大不同，下面就来讲讲 NekoBox 的使用。</p>
+<h2 id="1-下载"><a href="#1-下载" class="headerlink" title="1. 下载"></a>1. 下载</h2><p>在 GitHub 仓库下载即可，网址为：<a href="https://github.com/MatsuriDayo/NekoBoxForAndroid/releases">https://github.com/MatsuriDayo/NekoBoxForAndroid/releases</a> 一般选用 arm64-v8a，老旧的手机用 armeabi-v7a ，应该很少有用 x86 安卓的吧。</p>
+<h2 id="2-导入订阅"><a href="#2-导入订阅" class="headerlink" title="2. 导入订阅"></a>2. 导入订阅</h2><p>点击左上角三条杠，分组选项卡，右上角加号，进入分组设置。<br>分组名随便，分组类型选订阅，在下方填入订阅链接，点击右上角即成功。<br>有时候一些机场的「导入到 Clash For Android」选项也能正常唤起 NekoBox for Android 这时候就能一键导入了。</p>
+<h2 id="3-设置路由（设置分流、规则模式、绕过大陆）"><a href="#3-设置路由（设置分流、规则模式、绕过大陆）" class="headerlink" title="3. 设置路由（设置分流、规则模式、绕过大陆）"></a>3. 设置路由（设置分流、规则模式、绕过大陆）</h2><p>默认情况下 NekoBox for Android 是全局模式，需要设置路由。<br>在路由选项卡，将「中国 域名规则」和「中国 IP 规则」启用，即成功设置绕过大陆。</p>
+<h2 id="4-连接"><a href="#4-连接" class="headerlink" title="4. 连接"></a>4. 连接</h2><p>在配置选项卡中，找到新创建的分组，点击右上角三个点，连接测试，URL Test 进行测速，选择合适的节点，同意 VPN 请求，即可连接。</p>
+<h2 id="5-结语"><a href="#5-结语" class="headerlink" title="5. 结语"></a>5. 结语</h2><p>这就是全部的内容了，这样 NekoBox 就能正常使用了。</p>
 ]]></content>
   </entry>
   <entry>
@@ -155,14 +142,6 @@ git config --global https.proxy IP:PORT
 ]]></content>
   </entry>
   <entry>
-    <title>Windows 快速清理系统盘空间</title>
-    <url>/2023/07/02/windows-clean/</url>
-    <content><![CDATA[<h1 id="禁用休眠功能"><a href="#禁用休眠功能" class="headerlink" title="禁用休眠功能"></a>禁用休眠功能</h1><p>在以管理员身份运行的 CMD 中输入<code>powercfg -h off</code>即可</p>
-<h1 id="关闭保留的存储"><a href="#关闭保留的存储" class="headerlink" title="关闭保留的存储"></a>关闭保留的存储</h1><p>在以管理员身份运行的 CMD 中输入<code>DISM.exe /Online /Set-ReservedStorageState /State:Disabled</code>即可</p>
-<h1 id="移动虚拟内存文件"><a href="#移动虚拟内存文件" class="headerlink" title="移动虚拟内存文件"></a>移动虚拟内存文件</h1><p>打开设置，单击系统，单击系统信息，找到高级系统设置，单击性能设置，找到高级，虚拟内存，取消自动管理，并设置系统盘以外的磁盘为系统管理的大小，重启电脑，即可。</p>
-]]></content>
-  </entry>
-  <entry>
     <title>RackNerd的便宜VPS</title>
     <url>/2023/01/15/racknerd-vps/</url>
     <content><![CDATA[<h1 id="价格和配置"><a href="#价格和配置" class="headerlink" title="价格和配置"></a>价格和配置</h1><p>最近看到了一个非常便宜的 VPS,年付仅 <strong>$12.98</strong>，配置上有 1 核的 CPU，1GB内存，25GB 硬盘，每月 4TB 的流量，详情见图<br><img src="https://cdn.jsdmirror.com/gh/TheQHS/blog-img/RackNerd_Price.png" alt="https://cdn.jsdmirror.com/gh/TheQHS/blog-img/RackNerd_Price.png"></p>
@@ -177,6 +156,27 @@ git config --global https.proxy IP:PORT
     <title>theqhs.link 域名即将过期</title>
     <url>/2024/06/18/theqhs-link/</url>
     <content><![CDATA[<p><a href="theqhs.ink">theqhs.link</a> 域名即将过期，请转到 theqhs.eu.org 继续访问。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>theqhs.top 域名已过期</title>
+    <url>/2023/10/15/theqhs-top/</url>
+    <content><![CDATA[<p>theqhs.top 域名已过期，请迁移到以下站点：</p>
+<p>主要域名：<a href="https://theqhs.eu.org/">https://theqhs.eu.org</a> （访问这个域名如果显示「连接已重置」请多刷新几次）</p>
+<p>备用域名：</p>
+<ol>
+<li><a href="https://theqhs.link/">https://theqhs.link</a> 即将过期</li>
+<li><a href="https://theqhs.tk/">https://theqhs.tk</a></li>
+<li><a href="https://theqhs.cloudns.biz/">https://theqhs.cloudns.biz</a></li>
+</ol>
+]]></content>
+  </entry>
+  <entry>
+    <title>Windows 快速清理系统盘空间</title>
+    <url>/2023/07/02/windows-clean/</url>
+    <content><![CDATA[<h1 id="禁用休眠功能"><a href="#禁用休眠功能" class="headerlink" title="禁用休眠功能"></a>禁用休眠功能</h1><p>在以管理员身份运行的 CMD 中输入<code>powercfg -h off</code>即可</p>
+<h1 id="关闭保留的存储"><a href="#关闭保留的存储" class="headerlink" title="关闭保留的存储"></a>关闭保留的存储</h1><p>在以管理员身份运行的 CMD 中输入<code>DISM.exe /Online /Set-ReservedStorageState /State:Disabled</code>即可</p>
+<h1 id="移动虚拟内存文件"><a href="#移动虚拟内存文件" class="headerlink" title="移动虚拟内存文件"></a>移动虚拟内存文件</h1><p>打开设置，单击系统，单击系统信息，找到高级系统设置，单击性能设置，找到高级，虚拟内存，取消自动管理，并设置系统盘以外的磁盘为系统管理的大小，重启电脑，即可。</p>
 ]]></content>
   </entry>
 </search>
